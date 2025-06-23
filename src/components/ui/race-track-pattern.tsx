@@ -12,17 +12,17 @@ export default function RaceTrackPattern({
   className = "",
 }: RaceTrackPatternProps) {
   const generatePattern = () => {
-    const squares = []
+    const squares = [];
 
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
-        const isBlack = (row + col) % 2 === 0
-        squares.push(<div key={`${row}-${col}`} className={`${squareSize} ${isBlack ? "bg-white" : "bg-transparent"}`} />)
+        const isBlack = (row + col) % 2 === 0;
+        squares.push(<div key={`${row}-${col}`} className={`${squareSize} ${isBlack ? "bg-white" : "bg-transparent"}`} />);
       }
     }
 
-    return squares
-  }
+    return squares;
+  };
 
   return (
     <div
@@ -31,7 +31,7 @@ export default function RaceTrackPattern({
     >
       {generatePattern()}
     </div>
-  )
+  );
 }
 
 // Example usage component
@@ -71,5 +71,5 @@ export function RaceTrackPatternDemo() {
         </div>
       </div>
     </div>
-  )
+  );
 }
