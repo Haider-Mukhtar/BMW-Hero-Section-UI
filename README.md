@@ -7,7 +7,7 @@ A hero section UI design using React, Vite, TypeScript, and Tailwind CSS.
 
 ## Live Demo
 
-<a href="https://haidermukhtarv1.vercel.app/" target="_blank" title="Portfolio">💻 Live Demo</a>
+<a href="https://bmwherosectionui.vercel.app/" target="_blank" title="Demo">💻 Live Demo</a>
 
 
 ## Run Locally
