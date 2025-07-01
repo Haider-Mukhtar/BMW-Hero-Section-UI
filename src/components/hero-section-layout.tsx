@@ -15,15 +15,17 @@ const HeroSectionLayout = ({ children }: HeroSectionLayoutProps) => {
           alt='BMW Background'
           className='object-cover h-screen w-full'
         />
-        <div className='absolute inset-0 grid grid-cols-2'>
+        {/* Vertical bars overlay - hidden on small screens (md and below) */}
+        <div className='absolute inset-0 grid grid-cols-2 hidden md:grid'>
           <div className='flex flex-row'>
             {[...Array(20)].map((_, idx) => (
-              <div key={idx} className="h-screen w-12 shadow-[inset_-12px_-8px_40px_#e7000b50] border-r-1 border-red-600/40 backdrop-blur-sm flex items-center justify-center" />              
+              <div key={idx} className="h-screen w-12 shadow-[inset_-12px_-8px_40px_#e7000b50] border-r-1 border-red-600/40 backdrop-blur-sm flex items-center justify-center" />
             ))}
           </div>
           <div />
         </div>
-        <div className='absolute inset-0 bg-green-20 px-16'>
+        {/* Content slot */}
+        <div className='absolute inset-0 px-4 sm:px-8 md:px-12 lg:px-16'>
           {children}
         </div>
       </div>
